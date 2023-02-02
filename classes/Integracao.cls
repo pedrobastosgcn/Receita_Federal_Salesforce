@@ -1,7 +1,7 @@
-public class IntegracaoResponse {
+public class Integracao {
     
     public static final String url = 'https://receitaws.com.br/v1/cnpj/'; //Url do site da receita
-    public static IntegracaoResponse.DadosDaReceita doGet(Account ac) { //Método que irá utilizar o GET para obter os dados da receita
+    public static Integracao.DadosDaReceita doGet(Account ac) { //Método que irá utilizar o GET para obter os dados da receita
 
         String endpoint = ac.CNPJ__c; //O endpoint é o CNPJ pesquisado, ou seja utilizamos o CNPJ fornecido pela Account
         Http http = new Http();
